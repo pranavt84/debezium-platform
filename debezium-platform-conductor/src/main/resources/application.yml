@@ -44,6 +44,12 @@ destinations:
   kafka:
     connection:
       timeout: 60
+  rocketmq:
+    connection:
+      timeout: 30
+  rabbitmq:
+    connection:
+      timeout: 30
 
 quarkus:
   rest-client:

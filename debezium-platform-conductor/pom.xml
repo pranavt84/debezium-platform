@@ -5,11 +5,11 @@
     <parent>
         <groupId>io.debezium</groupId>
         <artifactId>debezium-parent</artifactId>
-        <version>3.4.0-SNAPSHOT</version>
+        <version>3.3.0.Final</version>
     </parent>
 
     <artifactId>debezium-platform-conductor</artifactId>
-    <version>3.4.0-SNAPSHOT</version>
+    <version>3.3.0.Final</version>
     <name>Debezium Platfrom Conductor</name>
 
     <properties>
@@ -364,6 +364,29 @@
             <version>${kafka-clients.version}</version>
         </dependency>
 
+        <!-- RocketMQ Client for connection validation -->
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-client</artifactId>
+            <version>4.9.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-remoting</artifactId>
+            <version>4.9.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-common</artifactId>
+            <version>4.9.8</version>
+        </dependency>
+
+        <!-- RabbitMQ Client for connection validation -->
+        <dependency>
+            <groupId>com.rabbitmq</groupId>
+            <artifactId>amqp-client</artifactId>
+            <version>5.22.0</version>
+        </dependency>
 
         <dependency>
             <groupId>io.quarkus</groupId>
